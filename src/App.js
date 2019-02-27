@@ -29,8 +29,12 @@ class App extends Component {
 
   componentDidMount = () => {
     const json = localStorage.getItem('recipes');
-    const recipes = JSON.parse(json);
-    this.setState({recipes: recipes});
+      if (json != null){
+      const recipes = JSON.parse(json);
+
+      this.setState({recipes: recipes});
+      }
+
   }
 
   // to store the inital search and see the result when come back to home
