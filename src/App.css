@@ -117,6 +117,7 @@ input:-webkit-autofill {
 
 .active-recipe__img {
   height: 500px !important;
+  margin-top: 2rem;
 }
 
 .active-recipe__title {
